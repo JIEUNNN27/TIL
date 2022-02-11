@@ -1,0 +1,3 @@
+#??!
+jname = input()
+print(jname+'??!')
