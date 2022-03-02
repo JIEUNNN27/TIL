@@ -1,22 +1,24 @@
 #이것도 검색해서...
-# 가로 세로 입력
+#격자판의 가로, 세로 받기
 h,w= map(int,input().split())
 
-# 격자판 생성
+# 격자판 만들기
 m = []
-for i in range(h+1):#가로 '길이'
+for i in range(h+1): #가로 '길이'니까 +1
   m.append([])
-  for j in range(w+1):
+  for j in range(w+1): #세로 '길이'니까 +1
     m[i].append(0)
 
-# 길이,가로세로여부,좌표 받아서 올려놓기
+
+#놓을 수 있는 막대 개수
 n = int(input())
+
 for i in range(n):
-  l,d,x,y=map(int,input().split())
+  l,d,x,y=map(int,input().split())    #막대의 길이, 방향, 좌표
   for j in range(l):
-     if d == 0:
-         m[x-1][y-1+j] = 1 # 격자판의 좌표의 원점이 1,1임을 유의하기. 그러나 리스트의 원점칸은 0,0 따라서 -1해줌
-     else:
+     if d == 0:  #가로
+         m[x-1][y-1+j] = 1 #리스트의 원점칸은 0,0 따라서 -1해줌
+     else:  #세로
          m[x-1+j][y-1] = 1
 
 #격자판 출력
