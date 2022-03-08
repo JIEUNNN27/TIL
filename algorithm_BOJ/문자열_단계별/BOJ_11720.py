@@ -1,0 +1,5 @@
+#숫자의 합(내장 함수 연습 문제)
+num1 = int(input())
+num2 = list(map(int,input()))
+su = sum(num2)
+print(su)
