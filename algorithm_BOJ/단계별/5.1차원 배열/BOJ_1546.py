@@ -1,4 +1,4 @@
-#평균
+#평균.
 n = int(input())
 
 guamok = list(map(int, input().split()))
