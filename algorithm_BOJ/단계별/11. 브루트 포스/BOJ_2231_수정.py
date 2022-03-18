@@ -19,15 +19,14 @@ for i in range(N):
         #자리수끼리 더한거
         jj += int(str_i[j])
 
-        if jj < N:
-            if ii+jj == N:
-                ii_lst.append(ii)
-            else:
-                continue
+    if jj < N:
+        if ii+jj == N:
+            ii_lst.append(ii)
+        else:
+            continue
 
 
 if ii_lst == []:
     print(0)
 else:
     print(min(ii_lst))
-    
