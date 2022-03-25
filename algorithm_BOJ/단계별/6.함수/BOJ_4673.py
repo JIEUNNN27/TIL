@@ -1,6 +1,7 @@
 #셀프 넘버
 #https://blog.naver.com/jmseb3/222240782144
-def kaprekar(n):
+
+def selfnum(n):
     num = n
     while True:
         if n >= 10:
@@ -16,7 +17,7 @@ def kaprekar(n):
 num_list = []
 
 for i in range(10000):
-    num_list.append(kaprekar(i))
+    num_list.append(selfnum(i))
 
 
 ans_list = list(set(range(10000)) - set(num_list))
