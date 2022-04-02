@@ -14,6 +14,7 @@ u, dwn, namu = map(int,input().split())
 #     print(day-1)
 # else:
 #     print(day)
+
 from math import *
 day = ceil((namu-u)/(u-dwn)+1)
 print(int(day))
