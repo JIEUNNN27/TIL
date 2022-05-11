@@ -1,0 +1,17 @@
+li{
+    font-size:50px;
+    display:block;
+}
+#vip {
+    font-weight:bold;
+
+}
+.user-list{
+    padding-left: 20px;
+}
+.user-list > li {
+    color: blue;
+}
+.user-list a{
+    color: blueviolet;
+}
