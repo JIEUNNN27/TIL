@@ -15,4 +15,3 @@ def solution(s):
     for number in numbers:
         s = s.replace(number, numbers[number])
     return int(s)
-    

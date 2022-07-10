@@ -9,7 +9,7 @@ def solution(arr1, arr2):
     
     #이거 안됨
     #import numpy as np
-    #array_sum_np = np.array(arr1)+np.array(arr2) 
+    #array_sum_np = np.array(arr1)+np.array(arr2)
     
     # for i in range(len(arr1[0])):
     #     for j in range(len(arr1)):
