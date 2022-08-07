@@ -4,7 +4,7 @@
 N = int(input())
 nums = list(map(int, input().split(' ')))
 
-#소수의 갯수
+#소수의 갯수.
 sosu = 0
 
 
